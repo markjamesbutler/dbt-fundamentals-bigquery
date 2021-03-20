@@ -6,9 +6,5 @@ select
     amount,	
     created,	
     _batched_at
+
 from `dbt-tutorial`.stripe.payment
-
-
-
-
-
