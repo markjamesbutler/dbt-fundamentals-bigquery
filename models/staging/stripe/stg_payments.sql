@@ -9,3 +9,4 @@ select
     created,	
 
 from `dbt-tutorial`.stripe.payment
+
