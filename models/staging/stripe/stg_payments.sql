@@ -3,8 +3,9 @@ select
     orderid as order_id,	
     paymentmethod,	
     status,
-    amount,	
+
+    -- amount is stored in cents, convert it to dollars
+    amount / 100 as amount,
     created,	
-    _batched_at
 
 from `dbt-tutorial`.stripe.payment
