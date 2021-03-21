@@ -16,14 +16,13 @@ models:
       - name: status
         tests:
           - accepted_values:
-          - accepted_values:
               values:
                 - completed
                 - shipped
                 - returned
                 - placed
                 - return_pending
-  - name: customer_id
+      - name: customer_id
         tests:
           - relationships:
               to: ref('stg_customers')
