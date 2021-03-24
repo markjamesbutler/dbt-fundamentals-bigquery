@@ -4,10 +4,21 @@ models:
   - name: stg_payments
     columns: 
       - name: customer_id
+        description: Primary key for customers.
         tests:
           - unique
           - not_null
       - name: order_id
+        description: Primary key for orders.
         tests:
           - unique
           - not_null
+      - name: payments_id
+        description: Stripe payment id.
+      - name: created
+        description: Date payment was created.
+      - name: amount
+        description: Payment amount in dollars.
+      - name: status
+        description: "{{ doc('payment_status') }}"
+
