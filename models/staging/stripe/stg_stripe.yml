@@ -3,11 +3,6 @@ version: 2
 models:
   - name: stg_payments
     columns: 
-      - name: customer_id
-        description: Primary key for customers.
-        tests:
-          - unique
-          - not_null
       - name: order_id
         description: Primary key for orders.
         tests:
